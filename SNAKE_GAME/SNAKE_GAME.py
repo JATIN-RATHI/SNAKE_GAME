@@ -178,24 +178,15 @@ while RUNNING:
                     x_entry = False
                     y_entry = True
 
-                
-
-
+              
         print_food()
 
         for i in range(number_of_blocks):
-
-
             print_snake_block()
-
-
             if CHECK_COLLISION():
 
                 EAT_sound = mixer.Sound('EAT.wav')
                 EAT_sound.play()
-
-
-
                 speed_incrementer += 1
                 if speed_incrementer == 4:
                     speed_incrementer = 0
@@ -212,9 +203,7 @@ while RUNNING:
                 food_y = random.randint(300 , 700 )
 
 
-
-            
-            
+                    
                 number_of_blocks += 40
                 for i in range(40):
                     x_val.append(-300)
@@ -236,12 +225,6 @@ while RUNNING:
                 down_change = 0
                 game_over_entry = True
                 
-        
-
-
-
-            
-        
-
+                    
     pygame.display.update()
 game_over_screen
